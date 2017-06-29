@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { AuthGuardService } from './auth-guard.service';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    MaterialModule
+    MaterialModule,
+    routing, 
   ],
   providers: [
     AuthGuardService
